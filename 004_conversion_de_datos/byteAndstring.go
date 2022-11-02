@@ -2,13 +2,15 @@ package conversiondedatos
 
 import "fmt"
 
-func ByteAndString(){
-  var nombre string = "David"
-  var name []byte
+func ByteAndString() {
+	var nombre string = "David"
+	var name []byte
 
-  name = []byte(nombre)
+	// * convert string to []byte
+	name = []byte(nombre)
 
-  nombre = string(name)
+	// * convert []byte to string
+	nombre = string(name)
 
-  fmt.Println(nombre, name)
+	fmt.Println(nombre, name)
 }
